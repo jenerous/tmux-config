@@ -15,7 +15,6 @@ The repo contains two files. One is hidden for unix systems as it starts with a 
 5. enjoy =)
 
 ## Detailed Install
-Clone the repo
 ```bash
 git clone https://github.com/jhertfe/tmux-config.git
 cd tmux-config
