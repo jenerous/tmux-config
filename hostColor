@@ -1,0 +1,4 @@
+#!/bin/bash
+bgColor="$[$[16#$(hostname | md5sum | cut -c17- | rev | cut -c17-)] % 231]"
+fgColor=$[$[bgColor % 8 < 5] * 15]
+echo "#[fg=colour$fgColor,bg=colour$bgColor] $(hostname) "
