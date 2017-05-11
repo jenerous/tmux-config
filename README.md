@@ -14,7 +14,7 @@ This is based on work of: [http://www.hamvocke.com/blog/a-guide-to-customizing-y
 | alt + ctrl + right |        next window |
 | ctrl + arrow | switch pane in direction |
 
-Mouse mode is enabled which means, you can click panes or window tabs to focus them.
+Mouse mode is enabled which means you can click panes or window tabs to focus them.
 
 ## Identify Current Host
 I'm working on lot's of different machines. As I use this tmux config on all of it normally I get confused sometimes which one it is.
@@ -35,4 +35,9 @@ git clone https://github.com/jhertfe/tmux-config.git
 cd tmux-config
 cp .tmux.conf ~/
 # cp hostColor ~/bin/
+```
+
+To few your current Path use
+```bash
+echo $Path
 ```
