@@ -1,0 +1,19 @@
+#!/bin/bash
+BGCOLOR="$[$[16#$(hostname | md5sum | cut -c17- | rev | cut -c17-)] % 16]"
+FGCOLOR=$[$[BGCOLOR < 8] * 15]
+if [ -f ~/.tmux.conf ]; then
+    SETUP_ALREADY_DONE=$(grep "# colors were set. Thanks for using this tmux config" ~/.tmux.conf)
+fi
+
+if [[ -z "${SETUP_ALREADY_DONE// }" ]]; then
+    if [ -f ~/.tmux.conf ]; then
+        mv ~/.tmux.conf ~/.tmux.conf.bak
+        echo "an old tmux config was found and moved to ~/.tmux.conf.bak"
+    fi
+    cp .tmux.conf ~/.tmux.conf
+    sed -i 's/RUN\ SETUP\ PLEASE/#[fg=colour'$FGCOLOR',bg=colour'$BGCOLOR']\ >>\ /g' ~/.tmux.conf
+    sed -i 's/# run .\/setup in repo please/# colors were set. Thanks for using my tmux config/g' ~/.tmux.conf
+    echo "finished. Enjoy!"
+else
+    echo "alredy performed"
+fi
