@@ -37,7 +37,7 @@ cp .tmux.conf ~/
 # cp hostColor ~/bin/
 ```
 
-To few your current Path use
+To view your current Path use
 ```bash
 echo $Path
 ```
