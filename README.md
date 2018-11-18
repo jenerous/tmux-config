@@ -1,6 +1,9 @@
 # tmux-config
-my personal tmux config. Feel free to use it, if you like.
-This is based on work of: [http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/]([http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/])
+This config addresses
+- design
+- host specific color identification (based on hostname)
+
+The design is based on work of: [http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/]([http://www.hamvocke.com/blog/a-guide-to-customizing-your-tmux-conf/])
 
 ![example](example.png)
 
