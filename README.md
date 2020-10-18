@@ -26,7 +26,7 @@ This let you recognize immediatly on which machine you work right now.
 
 ## Install (all in one. Handle with care!)
 ```
-cd $HOME && git clone https://github.com/jhertfe/tmux-config.git && cd tmux-config && ./setup && cd .. && rm -rf tmux-config && touch $HOME/.bash_aliases && grep -qxF 'alias tmux=tmux -2' $HOME/.bash_aliases || echo 'alias tmux=tmux -2' >> $HOME/.bash_aliases
+cd $HOME && git clone https://github.com/jhertfe/tmux-config.git && cd tmux-config && ./setup && cd .. && rm -rf tmux-config && touch $HOME/.bash_aliases && grep -qxF 'alias tmux="tmux -2"' $HOME/.bash_aliases || echo 'alias tmux="tmux -2"' >> $HOME/.bash_aliases
 ```
 
 ## Install (step-by-step)
