@@ -24,7 +24,12 @@ I'm working on lot's of different machines. As I use this tmux config on all of 
 The config therefore includes the host name within the status bar and a colored block which's color comes from a simple hash over the hostname.
 This let you recognize immediatly on which machine you work right now.
 
-## Usage
+## Install (all in one. Handle with care!)
+```
+cd $HOME && git clone https://github.com/jhertfe/tmux-config.git && cd tmux-config && ./setup && cd .. && rm -rf tmux-config && touch $HOME/.bash_aliases && grep -qxF 'alias tmux=tmux -2' $HOME/.bash_aliases || echo 'alias tmux=tmux -2' >> $HOME/.bash_aliases
+```
+
+## Install (step-by-step)
 The repo contains two files. One is hidden for unix systems as it starts with a dot!
 1. Clone the repo
 ```bash
